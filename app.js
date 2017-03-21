@@ -113,8 +113,9 @@ server.listen(config.site.port, config.site.host, function () {
       console.error(clc.red('Server is open to allow connections from anyone (0.0.0.0)'));
     }
 
-    if (config.basicAuth.username === 'admin' && config.basicAuth.password === 'pass') {
-      console.error(clc.red('basicAuth credentials are "admin:pass", it is recommended you change this in your config.js!'));
+    // if (config.basicAuth.username === 'admin' && config.basicAuth.password === 'pass') {
+    if (config.basicAuth.username === 'root' && config.basicAuth.password === 'root') {
+      console.error(clc.red('basicAuth credentials are "root:root", it is recommended you change this in your config.js!'));
     }
 
   }
